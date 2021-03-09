@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.codeplus.fragmentluasbangundatar.SegitigaFragment">
+
+    <Button
+        android:id="@+id/bHitungSegitiga"
+        android:padding="16dp"
+        android:layout_margin="5dp"
+        android:text="Hitung"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp" />
+
+    <EditText
+        android:id="@+id/etAlas"
+        android:hint="inputkan alas"
+        android:layout_toLeftOf="@id/bHitungSegitiga"
+        android:padding="16dp"
+        android:inputType="numberDecimal"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etTinggi"
+        android:hint="inputkan tinggi"
+        android:layout_below="@id/etAlas"
+        android:layout_toLeftOf="@id/bHitungSegitiga"
+        android:padding="16dp"
+        android:inputType="numberDecimal"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/etTinggi"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:id="@+id/tvHasilSegitiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
